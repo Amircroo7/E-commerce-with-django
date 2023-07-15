@@ -10,7 +10,7 @@ class UserCreationForm(forms.ModelForm):
     
     class Meta:
         model = User
-        field = ['email', 'phone_number',  'full_name']
+        fields = ['email', 'phone_number',  'full_name']
         
     def clean_password2(self):
         cd = self.cleaned_data
@@ -28,8 +28,8 @@ class UserCreationForm(forms.ModelForm):
     
 class UserChangeForm(forms.ModelForm):
     password = ReadOnlyPasswordHashField(
-        help_text=" you cant change password using  <a href=\" ../password/\">this form</a>"
+        help_text=" you can change password using  <a href=\" ../password/\">this form</a>"
     )
     class Meta:
         model = User
-        field = ['email', 'phone_number',  'full_name', 'password']
+        fields = ['email', 'phone_number',  'full_name', 'password']
