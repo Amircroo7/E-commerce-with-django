@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import View
 from .models import Product, Category
+from orders.forms import CartAddForm
 # Create your views here.
 class HomeView(View):
 	def get(self, request, category_slug=None):
