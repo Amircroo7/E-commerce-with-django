@@ -57,4 +57,3 @@ class OrderCreateView(LoginRequiredMixin, View):
 		return redirect('orders:order_detail', order.id)
 
 
-# Create your views here.
