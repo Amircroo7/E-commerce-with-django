@@ -70,7 +70,7 @@ class UserLogoutView(LoginRequiredMixin, View):
 
 class UserLoginView(View):
 	form_class = UserLoginForm
-	template_name = 'accounts/login.html'
+	template_name = 'account/login.html'
 
 	def get(self, request):
 		form = self.form_class
