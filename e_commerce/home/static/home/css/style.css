@@ -1,0 +1,32 @@
+/* Style for the category buttons */
+.btn-group {
+  margin-right: 10px;
+}
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* Style for the product cards */
+.card {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 18rem;
+}
+.card-img-top {
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover;
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #131111;
+  text-decoration: none;
+}
+.card-title:hover {
+  color: #f00;
+}
